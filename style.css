@@ -1,0 +1,95 @@
+/*========== main ==========*/
+/*--- top ---*/
+#top {
+    position: fixed;
+    top: 0;
+    left: 0; right: 0;
+    height: 40px;
+    background-color: rgba(54, 71, 90, 0.15);
+}
+/*--- camera ---*/
+#camera video {
+    position: fixed;
+    top: 0;
+    left: 0; right: 0;
+    width: 100%;
+    height: calc(100% - 95px);
+}
+
+/*--- bottom ---*/
+#bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0; right: 0;
+    height: 95px;
+    background-color: #36475A;
+}#bubbles {
+    
+}#gallery {
+    
+}
+
+
+/*========== photo ==========*/
+/*--- bottom ---*/
+#shutter {
+    position: relative;
+    top: 14.375px;
+    left: 50%; transform: translateX(-50%);
+
+    height: 57.5px; width: 57.5px;
+    
+    border: 2.5px solid #ffffff;
+    border-radius: 50%;
+    background-color: transparent;
+    
+    transition: all .5s ease;
+}#shutter:hover {
+    cursor: pointer;
+}#shutter.click {
+    background-color: #ffffff;
+}
+
+
+/*========== video ==========*/
+/*--- bottom ---*/
+#shutterVid {
+    position: relative;
+    top: 14.375px;
+    left: 50%; transform: translateX(-50%);
+
+    height: 57.5px; width: 57.5px;
+    
+    border: 2.5px solid #ffffff;
+    border-radius: 50%;
+    background-color: transparent;
+    
+    transition: all .5s ease;
+}#shutterVid:hover {
+    cursor: pointer;
+}#shutterVid.click {
+    border-color: #C45E5E;
+}
+
+#stop {
+    position: relative;
+    top: calc(50% - 22.5px);
+    left: 50%; transform: translateX(-50%);
+
+    height: 45px; width: 45px;
+    
+    border: none;
+    border-radius: 50%;
+    background-color: #C45E5E;
+    
+    transition: all .5s ease;
+}#stop:hover {
+    cursor: pointer;
+}#shutterVid.click #stop {
+    top: calc(50% - 12.5px);
+    
+    height: 25px; width: 25px;
+    border-radius: 2px;
+}
+
+
